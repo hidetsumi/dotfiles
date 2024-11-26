@@ -14,7 +14,6 @@ return {
         "eslint",
         "html",
         "jsonls",
-        "tsserver",
         "pyright",
         "tailwindcss",
         automatic_installation = true,
@@ -29,6 +28,7 @@ return {
         "black", -- python formatter
         "pylint",
         "eslint_d",
+        "markdown-toc"
       },
       auto_update = true,
       run_on_start = true,

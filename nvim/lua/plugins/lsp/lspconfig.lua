@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
-    { "folke/neodev.nvim", opts = {} },
+    -- { "folke/neodev.nvim", opts = {} },
   },
   config = function()
     local nvim_lsp = require("lspconfig")
@@ -29,12 +29,6 @@ return {
     mason_lspconfig.setup_handlers({
       function(server)
         nvim_lsp[server].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["tsserver"] = function()
-        nvim_lsp["tsserver"].setup({
-          on_attach = on_attach,
           capabilities = capabilities,
         })
       end,
