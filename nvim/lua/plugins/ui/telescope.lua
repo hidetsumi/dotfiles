@@ -1,3 +1,4 @@
+-- rg will autoignore .gitignore ONLY where a .git proj was init
 return {
   {
     "nvim-telescope/telescope.nvim",
