@@ -1,0 +1,10 @@
+# Ignore all
+/*
+./tmux/plugins
+
+!nvim
+!tmux
+!kitty
+!CHANGELOG.md
+!displayPlace.sh
+!.gitignore
